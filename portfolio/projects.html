@@ -10,24 +10,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v1.0.0/css/unicons.css">
-<script type="text/javascript">
-    arr=[];
-     fetch('https://api.github.com/users/shivika24/repos') 
-       .then(res =>{return res.json()})
-       .then(res =>{
-         arr=JSON.stringify(res); 
-   })
-
-       console.log(arr); 
-
-   
-    // dbParam = JSON.stringify(obj);
-    // xmlhttp = new XMLHttpRequest();
-    // myObj = JSON.parse(this.responseText);
-    // for (x in myObj) {
-    //     txt+=myObj[x].name;
-    // }
-</script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
 </head>
 
 <body class="dark-mode">
@@ -61,16 +46,186 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-11 text-center mx-auto col-12">
-                    <div class="col-lg-8 mx-auto">
-                        <h2>Things I have designed or developed during my Graduation</h2>
+                    <div class="col-lg-8 mx-auto" data-aos="fade-right">
+                        <h2>My Projects..</h2>
                     </div>
                 </div>
             </div>
-            <div class="row cards" id="cards" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
+            <div class="row cards" id="cards">
+
+                <div class="card mx-auto" data-aos="flip-left">
+                    <img class="card-img-top" style="height: 200px;" src="portfolio.svg" alt="portfolio-project">
+                    <div class="card-body">
+                        <h5 class="card-title">Portfolio</h5>
+                        <p class="card-text">A simple Portfolio Website to show my work made in HTML CSS bootstrap</p><br>
+                    </div>
+                        <div class="card-body">
+                            <a href="https://github.com/shivika24/Portfolio" target="_blank"><button class="btn card-link" style="margin-left: -100%;">View Code</button></a>
+                            <a href="https://shivikasingla.netlify.com" target="_blank"><button class="btn card-link">View Live</button></a>
+                        </div>
+
+                </div>
+                <div class="card mx-auto" data-aos="flip-left">
+                    <img class="card-img-top"  style="height: 200px;" src="poker.svg" alt="portfolio-project">
+                    <div class="card-body">
+                        <h5 class="card-title">Poker Game</h5>
+                        <p class="card-text">Poker game made by Python with local storage</p>
+                        <div class="card-body">
+                            <a href="https://github.com/shivika24/Poker-Game" target="_blank"><button class="btn card-link">View
+                                Code</button></a>                            
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card mx-auto" data-aos="flip-left">
+                    <img class="card-img-top" style="height: 200px;" src="t1.svg" alt="portfolio-project">
+                    <div class="card-body">
+                        <h5 class="card-title">Tourism Website</h5>
+                        <p class="card-text">Tourism Website Using ReactJs,NodeJs,MongoDb</p>
+                        <div class="card-body">
+                            <a href="https://github.com/shivika24/frontend" target="_blank"><button
+                                class="btn card-link">View Code</button></a>                            
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card mx-auto" data-aos="flip-left">
+                    <img class="card-img-top"  style="height: 200px;" src="learn.svg" alt="portfolio-project">
+                    <div class="card-body">
+                        <h5 class="card-title">Let's Learn</h5>
+                        <p class="card-text">It is an online MCQ test platform made using reactJS, nodeJS, ExpressJS, MySql in which a teacher after
+                            registering on the platform can upload a test and a unique link will be created.</p>
+                        <div class="card-body">
+                            <a href="https://github.com/shivika24/Let-s-Learn" target="_blank"><button
+                                class="btn card-link">View Code</button></a>                             
+                        </div>
+                    </div>
+                </div>
+                <div class="card mx-auto" data-aos="flip-left">
+                    <img class="card-img-top"  style="height: 200px;" src="foodfactory.svg" alt="portfolio-project">
+                    <div class="card-body">
+                        <h5 class="card-title">Food Factory</h5>
+                        <p class="card-text">A simple website made using html,css,bootstrap,php, in which restaurant can enter their menu and user can
+                            View the menu and order the food.</p>
+                        <div class="card-body">
+                            <a href="https://github.com/shivika24/food-factory" target="_blank"><button
+                                class="btn card-link">View Code</button></a>                             
+                        </div>
+                    </div>
+                </div>
+                <div class="card mx-auto" data-aos="flip-left">
+                    <img class="card-img-top"  style="height: 200px;" src="cafe.svg" alt="portfolio-project">
+                    <div class="card-body">
+                        <h5 class="card-title">Cafe Website</h5>
+                        <p class="card-text">Cafe Website Frontend</p>
+                        <div class="card-body">
+                            <a href="https://github.com/shivika24/cafe_website" target="_blank"><button
+                                class="btn card-link" style="margin-left: -100%;">View Code</button></a>
+                             <a href="https://cafe-website.vercel.app/" target="_blank"><button
+                                    class="btn card-link">View Live</button></a>                             
+                        </div>
+                    </div>
+                </div>
+                <div class="card mx-auto" data-aos="flip-left">
+                    <img class="card-img-top"  style="height: 200px;" src="chatapp.svg" alt="portfolio-project">
+                    <div class="card-body">
+                        <h5 class="card-title">ChatApp</h5>
+                        <p class="card-text">An Online Group Chat Room mage using ReactJS,nodeJS,MySQL</p>
+                        <div class="card-body">
+                            <a href="https://github.com/shivika24/chatapp" target="_blank"><button
+                                class="btn card-link">View Code</button></a>                         
+                        </div>
+                    </div>
+                </div>
+                <div class="card mx-auto" data-aos="flip-left">
+                    <img class="card-img-top"  style="height: 200px;" src="resumemaker.svg" alt="portfolio-project">
+                    <div class="card-body">
+                        <h5 class="card-title">Resume Maker</h5>
+                        <p class="card-text">A basic Resume Maker Using HTML, CSS.</p>
+                        </div>
+                        <div class="card-body">
+                            <a href="https://github.com/shivika24/Resume-Maker" target="_blank"><button
+                                class="btn card-link" style="margin-left: -100%;">View Code</button></a>
+                                <a href="https://resume-maker-nine.vercel.app/resume-maker.html" target="_blank"><button
+                                    class="btn card-link">View Live</button></a>                         
+                        
+                    </div>
+                </div>
+                <div class="card mx-auto" data-aos="flip-left">
+                    <img class="card-img-top"  style="height: 200px;" src="library.svg" alt="portfolio-project">
+                    <div class="card-body">
+                        <h5 class="card-title">Library Management System</h5>
+                        <p class="card-text">An Library management website made using MERN stack where books can be added,edited and deleted.</p>
+                        <div class="card-body">
+                            <a href="https://github.com/shivika24/library-management-" target="_blank"><button
+                                class="btn card-link">View Code</button></a>                     
+                        </div>
+                    </div>
+                </div>
+                <div class="card mx-auto" data-aos="flip-left">
+                    <img class="card-img-top" style="height: 200px;" src="shop.svg" alt="portfolio-project">
+                    <div class="card-body">
+                        <h5 class="card-title">Handicraft Selling</h5>
+                        <p class="card-text">Handicraft selling website front end only</p><br>
+                    </div>
+                        <div class="card-body">
+                            <a href="https://github.com/shivika24/Handicraft_selling" target="_blank"><button
+                                class="btn card-link" style="margin-left: -100%;">View Code</button></a><a href="https://kidoworld.000webhostapp.com/website/Categories/Categories.php" target="_blank"><button
+                                    class="btn card-link">View Live</button></a>                   
+                        </div>
+
+                </div>
+                <div class="card mx-auto" data-aos="flip-left">
+                    <img class="card-img-top"  style="height: 200px;" src="stone.svg" alt="portfolio-project">
+                    <div class="card-body">
+                        <h5 class="card-title">Stone Paper Scissors</h5>
+                        <p class="card-text">A simple game using html,css and javascript</p><br>
+                    </div>
+                        <div class="card-body">
+                            <a href="https://github.com/shivika24/stone-paper-and-scissor" target="_blank"><button
+                                class="btn card-link" style="margin-left: -100%;">View Code</button></a><a href="https://stone-paper-and-scissor.vercel.app/" target="_blank"><button
+                                    class="btn card-link">View Live</button></a>                   
+                        </div>
+
+                </div>
+                <div class="card mx-auto" data-aos="flip-left">
+                    <img class="card-img-top"  style="height: 200px;" src="tictac.svg" alt="portfolio-project">
+                    <div class="card-body">
+                        <h5 class="card-title">Tic Tac Toe</h5>
+                        <p class="card-text">A simple game made in c++</p><br>
+                        <div class="card-body">
+                            <a href="https://github.com/shivika24/tic-tac-toe" target="_blank"><button
+                                class="btn card-link">View Code</button></a>                     
+                        </div>
+                    </div>
+                </div>
 
             </div>
         </div>
-    </div>
+    </div> 
+    <div class="row" style="margin:0;padding:0;">
+        <div class="col-lg-11 text-center mx-auto col-12">
+            <div class="col-lg-8 mx-auto" data-aos="fade-down-right">
+                <h2 style="color: white;">UI PROJECTS...</h2>
+            </div>
+        </div>
+    </div><br><br>
+    <div class="row" style="margin:0;padding:0;">
+        <div class="col-md-6 col-12">
+            <img src="mock1.png" style="width: 100%;height: 100%;height: 100%;" data-aos="fade-down">
+        </div>
+        <div class="col-md-6 col-12">
+            <img src="mock2.png" style="width: 100%;height: 100%;" data-aos="fade-down">
+        </div>
+    </div><br>
+    <div class="row" style="margin:0;padding:0;">
+        <div class="col-md-6 col-12">
+            <img src="mock3.png" style="width: 100%;height: 100%;" data-aos="fade-down">
+        </div>
+        <div class="col-md-6 col-12">
+            <img src="mock4.png" style="width: 100%;height: 100%;" data-aos="fade-down">
+        </div>
+    </div><br>
     <footer class="footer py-5">
         <div class="container">
             <div class="row">
@@ -82,6 +237,7 @@
 
             </div>
         </div>
+        
     </footer>
     <script src="projects.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -94,6 +250,9 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <script src="https://use.fontawesome.com/691a127f98.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>

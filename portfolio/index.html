@@ -21,6 +21,8 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v1.0.0/css/unicons.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body id="body" data-spy="scroll" data-target="#myspy" class="light-mode">
@@ -40,7 +42,7 @@
             <a class="nav-link" href="#projects">Projects</a>
           </li>
            <li class="nav-item">
-            <a class="nav-link" href="teck.html">Technologies I Know</a>
+            <a class="nav-link" href="teck.html">Skills</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="https://drive.google.com/file/d/1k6BiW3WurDGyTdZsM6xhpzXF5PeBkTuz/view?usp=sharing"
@@ -52,7 +54,7 @@
         </ul>
         <ul class="navbar-nav ml-lg-auto ul2">
           <li class="nav-item">
-            <a class="nav-link" onclick="toggleDarkLight()"><i class='uil uil-moon'></i> <span class="mode">Color
+            <a class="nav-link" onclick="toggleDarkLight()"><i id="ii" class="uil uil-sun"></i> <span class="mode">Color
                 mode</span></a>
           </li>
         </ul>
@@ -65,7 +67,7 @@
         <div class="col-lg-7 col-md-12 col-12 d-flex align-items-center">
           <div class="about-me">
             <small>Welcome to my portfolio website!</small>
-            <h1>Hey folks, I'm <span class="type"></span></h1>
+            <h1>I'm <span class="type"></span></h1>
             <p>I'm pursuing my B.E from Chitkara University in Computer Science. I am a Full stack Developer and an enthusiast in coding. I like coding as much as I like web development but I can say that I get intrigued from any technology that I start learning.</p>
             <div class="buttons">
               <a href="https://drive.google.com/file/d/1k6BiW3WurDGyTdZsM6xhpzXF5PeBkTuz/view?usp=sharing"
@@ -76,7 +78,7 @@
         </div>
         <div class="col-lg-5 col-md-12 col-12 pic">
           <div class="about-image svg">
-            <img src="g2.svg" class="img-fluid" alt="svg image">
+            <img src="g2.svg" class="img-fluid" alt="svg image" data-aos="zoom-in">
           </div>
         </div>
       </div>
@@ -93,7 +95,7 @@
         </div>
       </div>
       <div class="row cards">
-        <div class="card mx-auto" style="width: 18rem;">
+        <div class="card mx-auto" style="width: 18rem;" data-aos="flip-left">
           <img src="portfolio.svg" class="card-img-top" alt="portfolio-project" height="175px">
           <div class="card-body">
             <h5 class="card-title">Portfolio</h5>
@@ -105,20 +107,19 @@
           </div>
         </div>
 
-        <div class="card mx-auto" style="width: 18rem;">
+        <div class="card mx-auto" style="width: 18rem;" data-aos="flip-left">
           <img src="poker.svg" class="card-img-top" alt="portfolio-project" height="175px">
           <div class="card-body">
             <h5 class="card-title">Poker Game</h5>
             <p class="card-text">A one player Poker Game made using Python, Web GUI and Flask framework</p>
           </div>
           <div class="card-body">
-            <a href="#"><button class="btn card-link">View Live</button></a>
             <a href="https://github.com/shivika24/Poker-Game" target="_blank"><button class="btn card-link">Get
                 Code</button></a>
           </div>
         </div>
 
-        <div class="card mx-auto" style="width: 18rem;">
+        <div class="card mx-auto" style="width: 18rem;" data-aos="flip-left">
           <img src="t1.svg" class="card-img-top" alt="portfolio-project" height="175px" width="100%">
           <div class="card-body">
             <h5 class="card-title">Tourism Website</h5>
@@ -169,7 +170,7 @@
           </div>
         </div>
         <div class="col-lg-5 mr-lg-5 col-xs-12 col-12">
-          <div class="contact-form">
+          <div class="contact-form" data-aos="fade-up">
             <h2 class="mb-4">Interested to work together? Let's talk</h2>
 
             <form class="gform"
